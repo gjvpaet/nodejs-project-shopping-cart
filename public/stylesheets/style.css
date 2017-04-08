@@ -1,8 +1,25 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.card-square {
+    width: 320px;
+    height: 320px;
 }
 
-a {
-  color: #00B7FF;
+.card-square > .mdl-card__title {
+    color: #ffffff;
+}
+
+.mdl-card__supporting-text {
+    color: #7f7f7f;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
 }
