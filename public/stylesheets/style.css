@@ -23,3 +23,11 @@
 .pull-left {
     float: left;
 }
+
+.list-error {
+    background-color: red;
+}
+
+.list-item {
+    color: white;
+}
