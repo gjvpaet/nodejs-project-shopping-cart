@@ -7,6 +7,15 @@
     color: #ffffff;
 }
 
+.card-order {
+    width: 738px;
+    margin-bottom: 10px;
+}
+
+.card-order > .mdl-card__title {
+    background-color: #46B6AC;
+}
+
 .mdl-card__supporting-text {
     color: #7f7f7f;
 }

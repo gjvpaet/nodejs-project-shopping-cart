@@ -24,7 +24,7 @@
     <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="/shopping-cart">
             <i class="material-icons">add_shopping_cart</i>
-            <span class="mdl-badge" data-badge="{{ session.cart.totalQty }}">
+            <span class="{{#if session.cart}}mdl-badge{{/if}}" data-badge="{{ session.cart.totalQty }}">
                 Shopping Cart
             </span>
         </a>

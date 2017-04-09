@@ -1,1 +1,25 @@
-<h1>User Profile</h1>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>User Profile</h1>
+        <hr>
+        <h2>My Orders</h2>
+        {{#each orders}}
+            <div class="card-order mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <ul class="mdl-list">
+                        {{#each this.items}}
+                            <li class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content mdl-badge" data-badge="{{this.price}}">
+                                    {{this.item.title}} | {{this.qty}} Units
+                                </span>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <strong>Total Price: ${{this.cart.totalPrice}}</strong>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
