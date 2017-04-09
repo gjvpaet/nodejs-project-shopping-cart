@@ -22,6 +22,11 @@
 <div class="mdl-layout__drawer">
     <span class="mdl-layout-title"><a href="/">Brand</a></span>
     <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href=""><i class="material-icons">add_shopping_cart</i> Shopping Cart</a>
+        <a class="mdl-navigation__link" href="/shopping-cart">
+            <i class="material-icons">add_shopping_cart</i>
+            <span class="mdl-badge" data-badge="{{ session.cart.totalQty }}">
+                Shopping Cart
+            </span>
+        </a>
     </nav>
 </div>
